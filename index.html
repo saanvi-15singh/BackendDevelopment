@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Backend Development - Saanvi Singh</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css">
   <style>
+    :root {
+      color-scheme: light;
+    }
     body {
       box-sizing: border-box;
       min-width: 200px;
@@ -13,14 +16,73 @@
       margin: 0 auto;
       padding: 45px;
       background-color: #f6f8fa;
+      color: #1f2328;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
     }
     .markdown-body {
-      background-color: #ffffff;
+      background-color: #ffffff !important;
+      color: #1f2328 !important;
       padding: 40px;
       border-radius: 8px;
       border: 1px solid #d0d7de;
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+      color: #1f2328 !important;
+      font-weight: 600 !important;
+      border-bottom-color: #d0d7de !important;
+    }
+    .markdown-body p,
+    .markdown-body li,
+    .markdown-body ul,
+    .markdown-body ol {
+      color: #1f2328 !important;
+    }
+    .markdown-body a {
+      color: #0969da !important;
+      font-weight: 500;
+    }
+    .markdown-body pre,
+    .markdown-body code {
+      color: #1f2328 !important;
+      background-color: #f6f8fa !important;
+    }
+    .markdown-body pre {
+      border: 1px solid #d0d7de !important;
+      border-radius: 6px;
+      padding: 16px;
+    }
+    .markdown-body table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .markdown-body th,
+    .markdown-body td {
+      border: 1px solid #d0d7de !important;
+      padding: 8px 13px;
+      color: #1f2328 !important;
+    }
+    .markdown-body th {
+      background-color: #f6f8fa !important;
+      font-weight: 600;
+    }
+    .markdown-body tr {
+      background-color: #ffffff !important;
+      border-top: 1px solid #d0d7de !important;
+    }
+    .markdown-body tr:nth-child(2n) {
+      background-color: #f6f8fa !important;
+    }
+    .markdown-body hr {
+      background-color: #d0d7de !important;
+      height: 2px !important;
+      border: none !important;
+      margin: 24px 0 !important;
     }
     .top-bar {
       display: flex;
@@ -37,9 +99,10 @@
       padding: 4px 10px;
       font-size: 13px;
       font-weight: 600;
-      color: #0969da;
+      color: #0969da !important;
       background-color: #ddf4ff;
       border-radius: 12px;
+      border: 1px solid #b6e3ff;
     }
     .github-link {
       display: inline-flex;
@@ -48,7 +111,7 @@
       padding: 6px 14px;
       font-size: 14px;
       font-weight: 500;
-      color: #24292f;
+      color: #24292f !important;
       background-color: #f6f8fa;
       border: 1px solid #d0d7de;
       border-radius: 6px;
@@ -61,8 +124,8 @@
     .footer-note {
       text-align: center;
       padding-top: 20px;
-      font-size: 15px;
-      color: #57606a;
+      font-size: 16px;
+      color: #1f2328 !important;
       font-weight: 600;
     }
     @media (max-width: 767px) {
