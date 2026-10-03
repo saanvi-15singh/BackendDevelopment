@@ -110,3 +110,7 @@ Open your browser and navigate to `http://localhost:3000`.
 
 ### Running Experiment 1
 Open `Lab/Experiment1/index.html` directly in any web browser, or use VS Code Live Server.
+
+---
+
+Design by - Saanvi Singh, 590011951
