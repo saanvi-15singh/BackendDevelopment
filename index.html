@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend Development - Saanvi Singh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+  <style>
+    body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+      background-color: #f6f8fa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    }
+    .markdown-body {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      border: 1px solid #d0d7de;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #d0d7de;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #0969da;
+      background-color: #ddf4ff;
+      border-radius: 12px;
+    }
+    .github-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #24292f;
+      background-color: #f6f8fa;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .github-link:hover {
+      background-color: #eaeef2;
+    }
+    .footer-note {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 15px;
+      color: #57606a;
+      font-weight: 600;
+    }
+    @media (max-width: 767px) {
+      body {
+        padding: 15px;
+      }
+      .markdown-body {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="markdown-body">
+    <div class="top-bar">
+      <span class="badge">Coursework &amp; Lab Projects</span>
+      <a class="github-link" href="https://github.com/saanvi-15singh/BackendDevelopment" target="_blank" rel="noopener noreferrer">
+        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+        View on GitHub
+      </a>
+    </div>
+
+    <h1>Backend Development</h1>
+    <p>This repository contains lab experiments, practical coursework, and examination projects for the <strong>Backend Development</strong> curriculum.</p>
+
+    <hr>
+
+    <h2>📑 Table of Contents</h2>
+    <ul>
+      <li><a href="#repository-structure">Repository Structure</a></li>
+      <li><a href="#lab-experiments--tests">Lab Experiments &amp; Tests</a>
+        <ul>
+          <li><a href="#1-lab-test-1-simple-cms-blog-application">1. Lab Test-1 Experiment (Simple CMS Blog)</a></li>
+          <li><a href="#2-experiment-1-web-page-with-html5-elements">2. Experiment 1 (HTML5 Web Page)</a></li>
+        </ul>
+      </li>
+      <li><a href="#theory--demos">Theory &amp; Demos</a></li>
+      <li><a href="#how-to-run">How to Run</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="repository-structure">📁 Repository Structure</h2>
+    <pre><code>BackendDevelopment/
+├── Lab/
+│   ├── Experiment1/                      # Experiment 1: HTML5 Elements
+│   │   ├── index.html                    # Main HTML5 Webpage
+│   │   └── Report.md                     # Experiment 1 Lab Report
+│   └── Lab Test-1 Experiment/            # Lab Test-1: Simple CMS Blog
+│       ├── app.js                        # Express server &amp; MongoDB logic
+│       ├── package.json                  # Dependencies &amp; scripts
+│       ├── views/                        # EJS template views
+│       ├── public/                       # CSS stylesheets
+│       ├── README.md                     # Lab Test 1 Documentation
+│       └── Report.md                     # Lab Test 1 Full Report
+├── Theory/
+│   ├── Express/                          # Express.js theory code &amp; demos
+│   └── Flask Server/                     # Flask server implementation
+└── README.md                             # Main Repository Index</code></pre>
+
+    <hr>
+
+    <h2 id="lab-experiments--tests">🧪 Lab Experiments &amp; Tests</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Experiment / Test Name</th>
+          <th>Link</th>
+          <th>Lab Report</th>
+          <th>Key Technologies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>Lab Test-1 Experiment</strong> (Simple CMS Blog)</td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Lab/Lab%20Test-1%20Experiment">📁 <code>Lab/Lab Test-1 Experiment</code></a></td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Lab%20Test-1%20Experiment/Report.md">📄 Report.md</a></td>
+          <td>Node.js, Express, MongoDB, EJS</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>Experiment 1</strong> (HTML5 Web Page)</td>
+          <td><a href="./Lab/Experiment1/index.html">🌐 <strong>View Webpage Live</strong></a></td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Experiment1/Report.md">📄 Report.md</a></td>
+          <td>HTML5, CSS3, JavaScript</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h3 id="1-lab-test-1-simple-cms-blog-application">1. Lab Test-1: Simple CMS Blog Application</h3>
+    <ul>
+      <li><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Lab/Lab%20Test-1%20Experiment">📁 <code>Lab/Lab Test-1 Experiment/</code></a></li>
+      <li><strong>Documentation:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Lab%20Test-1%20Experiment/README.md">README.md</a></li>
+      <li><strong>Lab Report:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Lab%20Test-1%20Experiment/Report.md">Report.md</a></li>
+      <li><strong>Application Code:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Lab%20Test-1%20Experiment/app.js">app.js</a></li>
+      <li><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, EJS, HTML5, CSS3</li>
+    </ul>
+
+    <h4>Overview</h4>
+    <p>A full-stack Blog Content Management System (CMS) built during the Lab Test-1 Examination. It allows users to create new blog posts, browse all existing posts, and view individual articles in detail. Data is persisted in a MongoDB database with server-rendered EJS templates.</p>
+
+    <h4>Key Features</h4>
+    <ul>
+      <li><strong>Create Post:</strong> Form allowing submission of title, author, and content with automatic timestamps.</li>
+      <li><strong>View All Posts:</strong> Displays cards for each blog post sorted chronologically.</li>
+      <li><strong>View Single Post:</strong> Dynamic routing (<code>/post/:id</code>) to display full blog post contents.</li>
+      <li><strong>MongoDB Integration:</strong> Connected to <code>mongodb://127.0.0.1:27017</code> with database <code>cms_lab</code> and collection <code>posts</code>.</li>
+    </ul>
+
+    <hr>
+
+    <h3 id="2-experiment-1-web-page-with-html5-elements">2. Experiment 1: Web Page with HTML5 Elements</h3>
+    <ul>
+      <li><strong>Live Webpage:</strong> <a href="./Lab/Experiment1/index.html"><strong>Open index.html</strong></a></li>
+      <li><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Lab/Experiment1">📁 <code>Lab/Experiment1/</code></a></li>
+      <li><strong>Lab Report:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Experiment1/Report.md">Report.md</a></li>
+      <li><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript</li>
+    </ul>
+
+    <h4>Overview</h4>
+    <p>An exploration and demonstration of core modern HTML5 elements, structures, and semantic web standards.</p>
+
+    <h4>Key Features</h4>
+    <ul>
+      <li><strong>Semantic Structure:</strong> Utilization of <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
+      <li><strong>Text &amp; Media Elements:</strong> Headings, blockquotes, code blocks, lists, audio playback, and embedded video.</li>
+      <li><strong>Tables &amp; Forms:</strong> Data tables, interactive form controls with validation, range sliders, date pickers, and submit actions.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="theory--demos">📚 Theory &amp; Demos</h2>
+    <ul>
+      <li><strong><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Express">Express Demos:</a></strong> Basic server setup and routing using Express.js.</li>
+      <li><strong><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Flask%20Server">Flask Server:</a></strong> Backend server implementation using Python and Flask.</li>
+    </ul>
+
+    <hr>
+
+    <h2 id="how-to-run">🚀 How to Run</h2>
+
+    <h3>Running Lab Test-1 (Simple CMS Blog)</h3>
+    <pre><code># 1. Navigate to the project directory
+cd "Lab/Lab Test-1 Experiment"
+
+# 2. Install dependencies
+npm install
+
+# 3. Ensure MongoDB daemon is running
+mongod
+
+# 4. Start the application
+node app.js</code></pre>
+    <p>Open your browser and navigate to <code>http://localhost:3000</code>.</p>
+
+    <h3>Running Experiment 1</h3>
+    <p>Open <a href="./Lab/Experiment1/index.html"><code>Lab/Experiment1/index.html</code></a> directly in any web browser, or use VS Code Live Server.</p>
+
+    <hr>
+
+    <div class="footer-note">
+      Design by - Saanvi Singh, 590011951
+    </div>
+  </div>
+</body>
+</html>
