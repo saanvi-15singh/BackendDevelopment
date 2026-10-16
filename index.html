@@ -150,6 +150,7 @@
       border: 1px solid #d0d7de !important;
       padding: 10px 14px;
       text-align: left;
+      vertical-align: top;
     }
     th {
       background-color: #f6f8fa !important;
@@ -226,7 +227,7 @@
     </div>
 
     <h1>Backend Development</h1>
-    <p>This repository contains lab experiments, practical coursework, and examination projects for the <strong>Backend Development</strong> curriculum.</p>
+    <p>This repository contains lab experiments, practical coursework, and theory assignments for the <strong>Backend Development</strong> curriculum.</p>
 
     <hr>
 
@@ -239,7 +240,13 @@
           <li><a href="#2-experiment-1-web-page-with-html5-elements">2. Experiment 1 (HTML5 Web Page)</a></li>
         </ul>
       </li>
-      <li><a href="#theory--demos">Theory &amp; Demos</a></li>
+      <li><a href="#theory--assignments">Theory Assignments &amp; Demos</a>
+        <ul>
+          <li><a href="#assignment-1-notes-app">Assignment 1: Notes App</a></li>
+          <li><a href="#assignment-2-postgresql-as-sql--nosql">Assignment 2: PostgreSQL as SQL + NoSQL (JSONB)</a></li>
+          <li><a href="#express-demos--flask-server">Express Demos &amp; Flask Server</a></li>
+        </ul>
+      </li>
       <li><a href="#how-to-run">How to Run</a></li>
     </ul>
 
@@ -259,8 +266,19 @@
 │       ├── README.md                     # Lab Test 1 Documentation
 │       └── Report.md                     # Lab Test 1 Full Report
 ├── Theory/
+│   ├── Assignment-1/                     # Assignment 1: Notes App
+│   │   ├── index.html                    # Notes App Webpage
+│   │   ├── style.css                     # Notes App Stylesheet
+│   │   ├── script.js                     # Notes App JavaScript Logic
+│   │   └── Report.md                     # Assignment 1 Full Report
+│   ├── Assignment-2/                     # Assignment 2: PostgreSQL JSONB (SQL + NoSQL)
+│   │   └── Report.md                     # Assignment 2 Full Report
 │   ├── Express/                          # Express.js theory code &amp; demos
+│   │   ├── Server.js                     # Express server entry point
+│   │   └── express-demo/                 # Demo configuration
 │   └── Flask Server/                     # Flask server implementation
+│       ├── main.py                       # Flask server entry point
+│       └── README.md                     # Flask server documentation
 └── README.md                             # Main Repository Index</code></pre>
 
     <hr>
@@ -338,15 +356,133 @@
 
     <hr>
 
-    <h2 id="theory--demos">📚 Theory &amp; Demos</h2>
+    <h2 id="theory--assignments">📚 Theory Assignments &amp; Demos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Assignment / Topic</th>
+          <th>Live / Link</th>
+          <th>Files &amp; Documentation</th>
+          <th>Tech Stack</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>Assignment 1: Notes App</strong></td>
+          <td><a href="./Theory/Assignment-1/index.html">🌐 <strong>Open Notes App Live</strong></a></td>
+          <td>
+            <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/Report.md">📄 Report.md</a><br>
+            <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/index.html">📄 index.html</a><br>
+            <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/style.css">📄 style.css</a><br>
+            <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/script.js">📄 script.js</a>
+          </td>
+          <td>HTML5, CSS3, JavaScript, LocalStorage, JSON</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>Assignment 2: PostgreSQL as SQL + NoSQL (JSONB)</strong></td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Assignment-2">📁 <code>Theory/Assignment-2</code></a></td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-2/Report.md">📄 Report.md</a></td>
+          <td>PostgreSQL 18, JSONB, GIN Indexing, MongoDB</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>Express Demos</strong></td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Express">📁 <code>Theory/Express</code></a></td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Express/Server.js">📄 Server.js</a></td>
+          <td>Node.js, Express.js</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Flask Server</strong></td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Flask%20Server">📁 <code>Theory/Flask Server</code></a></td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Flask%20Server/main.py">📄 main.py</a></td>
+          <td>Python 3, Flask</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h3 id="assignment-1-notes-app">Assignment 1: Notes App</h3>
     <ul>
-      <li><strong><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Express">Express Demos:</a></strong> Basic server setup and routing using Express.js.</li>
-      <li><strong><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Flask%20Server">Flask Server:</a></strong> Backend server implementation using Python and Flask.</li>
+      <li><strong>Live Application:</strong> <a href="./Theory/Assignment-1/index.html"><strong>Open Notes App Live</strong></a></li>
+      <li><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Assignment-1">📁 <code>Theory/Assignment-1/</code></a></li>
+      <li><strong>Documentation:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/Report.md">Report.md</a></li>
+      <li><strong>Source Files:</strong>
+        <ul>
+          <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/index.html">index.html</a> — Notes application UI structure and input form</li>
+          <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/style.css">style.css</a> — Styling, responsive note card grid, and UI states</li>
+          <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/script.js">script.js</a> — Note operations, LocalStorage synchronization, and validation</li>
+        </ul>
+      </li>
+      <li><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, Browser LocalStorage, JSON</li>
+    </ul>
+
+    <h4>Overview</h4>
+    <p>A client-side Notes Application that empowers users to compose, organize, and delete personal notes. Utilizes the browser's <code>localStorage</code> API in combination with JSON serialization so that user data persists across page refreshes and browser restarts.</p>
+
+    <h4>Key Features</h4>
+    <ul>
+      <li><strong>Add &amp; Display Notes:</strong> Interactive input form with dynamic rendering into organized note cards.</li>
+      <li><strong>Persistent Local Storage:</strong> Full synchronization with browser storage using <code>JSON.stringify</code> and <code>JSON.parse</code>.</li>
+      <li><strong>Delete Functionality:</strong> Instant deletion of individual notes with automatic state persistence.</li>
+      <li><strong>Validation &amp; Feedback:</strong> Input verification preventing empty submissions with transient feedback alerts.</li>
+    </ul>
+
+    <hr>
+
+    <h3 id="assignment-2-postgresql-as-sql--nosql">Assignment 2: PostgreSQL as SQL + NoSQL — Working with JSONB</h3>
+    <ul>
+      <li><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Assignment-2">📁 <code>Theory/Assignment-2/</code></a></li>
+      <li><strong>Documentation &amp; Full Report:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-2/Report.md">Report.md</a></li>
+      <li><strong>Tech Stack:</strong> PostgreSQL 18, JSONB, GIN Indexing, MongoDB, SQL</li>
+    </ul>
+
+    <h4>Overview</h4>
+    <p>A comprehensive theoretical study and practical laboratory implementation demonstrating how PostgreSQL bridges relational SQL and document-oriented NoSQL storage using the <code>JSONB</code> binary format. Explores hybrid schema design, query operators, GIN index acceleration, <code>EXPLAIN ANALYZE</code> query profiling, and a comparative evaluation against MongoDB.</p>
+
+    <h4>Key Topics &amp; Implementations Covered</h4>
+    <ul>
+      <li><strong>Conceptual Analysis (Part A):</strong>
+        <ul>
+          <li>Differences between <code>JSON</code> (raw text storage) and <code>JSONB</code> (decomposed binary format).</li>
+          <li>Combining strongly typed SQL columns (id, name, price) with dynamic JSONB document attributes in the same table.</li>
+          <li>JSONB operators in depth: <code>-&gt;</code> (extract JSON value), <code>-&gt;&gt;</code> (extract as text), <code>@&gt;</code> (containment check), and <code>?</code> (top-level key existence).</li>
+          <li>GIN (Generalized Inverted Index) indexing and query planner execution behavior.</li>
+          <li>Architectural trade-offs between PostgreSQL JSONB and MongoDB (ACID transactions, joins, schema enforcement, horizontal sharding).</li>
+        </ul>
+      </li>
+      <li><strong>Practical Implementation (Part B):</strong>
+        <ul>
+          <li>Setup of PostgreSQL <code>product_catalog</code> database and <code>products</code> table.</li>
+          <li>Insertion of diverse products spanning multiple categories with rich JSONB attributes.</li>
+          <li>Attribute updates using JSONB concatenation (<code>||</code>).</li>
+          <li>Query benchmarking before and after GIN index creation using <code>EXPLAIN ANALYZE</code>.</li>
+          <li>Equivalent MongoDB setup and cross-platform comparative analysis.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr>
+
+    <h3 id="express-demos--flask-server">Express Demos &amp; Flask Server</h3>
+    <ul>
+      <li><strong><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Express">Express Demos:</a></strong> Basic server setup and routing using Express.js. (Entry: <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Express/Server.js">Server.js</a>)</li>
+      <li><strong><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Flask%20Server">Flask Server:</a></strong> Backend server implementation using Python and Flask. (Entry: <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Flask%20Server/main.py">main.py</a>)</li>
     </ul>
 
     <hr>
 
     <h2 id="how-to-run">🚀 How to Run</h2>
+
+    <h3>Running Assignment 1 (Notes App)</h3>
+    <p>Open <a href="./Theory/Assignment-1/index.html"><code>Theory/Assignment-1/index.html</code></a> directly in any modern web browser, or launch using VS Code Live Server.</p>
+
+    <h3>Running Assignment 2 (PostgreSQL &amp; MongoDB)</h3>
+    <p>Follow the complete step-by-step SQL queries and MongoDB shell commands provided in <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-2/Report.md"><code>Theory/Assignment-2/Report.md</code></a>.</p>
 
     <h3>Running Lab Test-1 (Simple CMS Blog)</h3>
     <pre><code># 1. Navigate to the project directory
@@ -364,6 +500,14 @@ node app.js</code></pre>
 
     <h3>Running Experiment 1</h3>
     <p>Open <a href="./Lab/Experiment1/index.html"><code>Lab/Experiment1/index.html</code></a> directly in any web browser, or use VS Code Live Server.</p>
+
+    <h3>Running Express Demos</h3>
+    <pre><code>cd "Theory/Express"
+node Server.js</code></pre>
+
+    <h3>Running Flask Server</h3>
+    <pre><code>cd "Theory/Flask Server"
+python main.py</code></pre>
 
     <hr>
 
