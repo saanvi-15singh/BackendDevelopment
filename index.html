@@ -4,25 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light">
-  <title>Backend Development - Saanvi Singh</title>
+  <title>Backend Development – Saanvi Singh</title>
   <style>
-    :root {
-      color-scheme: light;
-    }
-    * {
-      box-sizing: border-box;
-    }
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
     html, body {
       background-color: #f6f8fa !important;
       color: #000000 !important;
       -webkit-text-fill-color: #000000;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
     }
-    body {
-      padding: 30px 15px;
-    }
+    body { padding: 30px 15px; }
     .page-container {
       max-width: 960px;
       margin: 0 auto;
@@ -30,54 +23,27 @@
       border: 1px solid #d0d7de;
       border-radius: 8px;
       padding: 40px 50px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       color: #000000 !important;
     }
-    /* Headings in bold black */
     h1, h2, h3, h4, h5, h6 {
       color: #000000 !important;
       -webkit-text-fill-color: #000000 !important;
       font-weight: 700 !important;
-      margin-top: 24px;
-      margin-bottom: 16px;
-      line-height: 1.3;
+      margin-top: 28px; margin-bottom: 14px; line-height: 1.3;
     }
-    h1 {
-      font-size: 2.2rem;
-      border-bottom: 2px solid #eaecef;
-      padding-bottom: 12px;
-      margin-top: 10px;
-    }
-    h2 {
-      font-size: 1.5rem;
-      border-bottom: 1px solid #eaecef;
-      padding-bottom: 8px;
-    }
-    h3 {
-      font-size: 1.25rem;
-    }
-    h4 {
-      font-size: 1.05rem;
-    }
-    /* Content text in solid black */
+    h1 { font-size: 2.2rem; border-bottom: 2px solid #eaecef; padding-bottom: 12px; margin-top: 10px; }
+    h2 { font-size: 1.5rem; border-bottom: 1px solid #eaecef; padding-bottom: 8px; }
+    h3 { font-size: 1.25rem; }
+    h4 { font-size: 1.05rem; }
     p, li, span, div, strong, b, td, th {
       color: #000000 !important;
       -webkit-text-fill-color: #000000 !important;
       line-height: 1.6;
     }
-    p {
-      margin: 14px 0;
-      font-size: 16px;
-    }
-    ul, ol {
-      padding-left: 28px;
-      margin: 14px 0;
-    }
-    li {
-      margin-bottom: 6px;
-      font-size: 15px;
-    }
-    /* Links in vibrant blue */
+    p { margin: 12px 0; font-size: 16px; }
+    ul, ol { padding-left: 28px; margin: 12px 0; }
+    li { margin-bottom: 6px; font-size: 15px; }
     a, a * {
       color: #0969da !important;
       -webkit-text-fill-color: #0969da !important;
@@ -87,137 +53,62 @@
     a:hover, a:hover * {
       color: #054da0 !important;
       -webkit-text-fill-color: #054da0 !important;
-      text-decoration: underline !important;
     }
-    /* Top bar */
     .top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid #e1e4e8;
-      flex-wrap: wrap;
-      gap: 12px;
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 24px; padding-bottom: 16px;
+      border-bottom: 1px solid #e1e4e8; flex-wrap: wrap; gap: 12px;
     }
     .badge {
-      display: inline-block;
-      padding: 4px 12px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #0969da !important;
-      -webkit-text-fill-color: #0969da !important;
-      background-color: #ddf4ff;
-      border: 1px solid #54aeff;
-      border-radius: 12px;
+      display: inline-block; padding: 4px 12px; font-size: 13px; font-weight: 600;
+      color: #0969da !important; -webkit-text-fill-color: #0969da !important;
+      background-color: #ddf4ff; border: 1px solid #54aeff; border-radius: 12px;
     }
     .github-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 14px;
-      font-size: 14px;
-      font-weight: 600;
-      color: #24292f !important;
-      -webkit-text-fill-color: #24292f !important;
-      background-color: #f6f8fa;
-      border: 1px solid #d0d7de;
-      border-radius: 6px;
-      text-decoration: none !important;
-      transition: background-color 0.2s;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 7px 14px; font-size: 14px; font-weight: 600;
+      color: #24292f !important; -webkit-text-fill-color: #24292f !important;
+      background-color: #f6f8fa; border: 1px solid #d0d7de; border-radius: 6px;
+      text-decoration: none !important; transition: background-color 0.2s;
     }
-    .github-link:hover {
-      background-color: #eaeef2;
-    }
-    .github-link svg {
-      fill: #24292f;
-    }
-    /* Dividers */
-    hr {
-      height: 1px;
-      background-color: #e1e4e8;
-      border: none;
-      margin: 24px 0;
-    }
-    /* Tables */
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 18px 0;
-      font-size: 15px;
-    }
-    th, td {
-      border: 1px solid #d0d7de !important;
-      padding: 10px 14px;
-      text-align: left;
-      vertical-align: top;
-    }
-    th {
-      background-color: #f6f8fa !important;
-      font-weight: 700;
-      color: #000000 !important;
-      -webkit-text-fill-color: #000000 !important;
-    }
-    tr {
-      background-color: #ffffff !important;
-    }
-    tr:nth-child(even) {
-      background-color: #f6f8fa !important;
-    }
-    /* Code blocks */
+    .github-link:hover { background-color: #eaeef2; }
+    .github-link svg { fill: #24292f; }
+    hr { height: 1px; background-color: #e1e4e8; border: none; margin: 24px 0; }
+    table { border-collapse: collapse; width: 100%; margin: 18px 0; font-size: 15px; }
+    th, td { border: 1px solid #d0d7de !important; padding: 10px 14px; text-align: left; vertical-align: top; }
+    th { background-color: #f6f8fa !important; font-weight: 700; color: #000000 !important; -webkit-text-fill-color: #000000 !important; }
+    tr { background-color: #ffffff !important; }
+    tr:nth-child(even) { background-color: #f6f8fa !important; }
     pre {
-      background-color: #f6f8fa !important;
-      border: 1px solid #d0d7de !important;
-      border-radius: 6px;
-      padding: 16px;
-      overflow-x: auto;
-      font-size: 14px;
-      line-height: 1.45;
+      background-color: #f6f8fa !important; border: 1px solid #d0d7de !important;
+      border-radius: 6px; padding: 16px; overflow-x: auto;
+      font-size: 14px; line-height: 1.45;
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
     }
-    pre code {
-      background-color: transparent !important;
-      border: none !important;
-      padding: 0 !important;
-      color: #000000 !important;
-      -webkit-text-fill-color: #000000 !important;
-    }
+    pre code { background-color: transparent !important; border: none !important; padding: 0 !important; color: #000000 !important; -webkit-text-fill-color: #000000 !important; }
     code {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-      background-color: #eff1f3 !important;
-      border: 1px solid #d0d7de;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 85%;
-      color: #000000 !important;
-      -webkit-text-fill-color: #000000 !important;
+      background-color: #eff1f3 !important; border: 1px solid #d0d7de;
+      padding: 2px 6px; border-radius: 4px; font-size: 85%;
+      color: #000000 !important; -webkit-text-fill-color: #000000 !important;
     }
-    /* Footer */
     .footer-note {
-      text-align: center;
-      padding-top: 24px;
-      font-size: 16px;
-      font-weight: 700;
-      color: #000000 !important;
-      -webkit-text-fill-color: #000000 !important;
+      text-align: center; padding-top: 24px; font-size: 16px; font-weight: 700;
+      color: #000000 !important; -webkit-text-fill-color: #000000 !important;
     }
+    .meta-info { background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 6px; padding: 16px 20px; margin-bottom: 20px; }
+    .meta-info p { margin: 4px 0; font-size: 15px; }
     @media (max-width: 768px) {
-      body {
-        padding: 10px;
-      }
-      .page-container {
-        padding: 20px 18px;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
+      body { padding: 10px; }
+      .page-container { padding: 20px 18px; }
+      h1 { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
   <div class="page-container">
     <div class="top-bar">
-      <span class="badge">Coursework &amp; Lab Projects</span>
+      <span class="badge">Theory &amp; Lab Coursework</span>
       <a class="github-link" href="https://github.com/saanvi-15singh/BackendDevelopment" target="_blank" rel="noopener noreferrer">
         <svg height="16" width="16" viewBox="0 0 16 16">
           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
@@ -226,265 +117,555 @@
       </a>
     </div>
 
-    <h1>Backend Development</h1>
-    <p>This repository contains lab experiments, practical coursework, and theory assignments for the <strong>Backend Development</strong> curriculum.</p>
+    <h1>Backend Development – Theory and Lab Experiments</h1>
+
+    <div class="meta-info">
+      <p><strong>Submitted By:</strong> Saanvi Singh</p>
+      <p><strong>Course:</strong> Backend Development</p>
+      <p><strong>Department:</strong> Computer Science and Engineering</p>
+      <p><strong>University:</strong> UPES</p>
+      <p><strong>Batch:</strong> 5 (Core)</p>
+      <p><strong>SAP ID:</strong> 590011951</p>
+    </div>
+
+    <hr>
+
+    <h2>About the Repository</h2>
+    <p>This repository contains my complete Backend Development coursework, including theory units, practical lab experiments, assignments, backend demonstrations, project implementations, and reports.</p>
+    <p>The coursework covers fundamental and advanced backend development concepts using technologies such as Python, JavaScript, Node.js, Express.js, Flask, Django, FastAPI, MongoDB, PostgreSQL, SQLite, HTML5, CSS3, REST APIs, Serverless Architecture, and Docker.</p>
+    <p>The repository is divided into two major sections:</p>
+    <ol>
+      <li><strong>Theory:</strong> Contains unit-wise practical implementations, assignments, backend demonstrations, and the consolidated theory report.</li>
+      <li><strong>Lab:</strong> Contains 15 practical experiments, Lab Test-1, their source code, implementations, and practical reports.</li>
+    </ol>
 
     <hr>
 
     <h2>📑 Table of Contents</h2>
-    <ul>
-      <li><a href="#repository-structure">Repository Structure</a></li>
-      <li><a href="#lab-experiments--tests">Lab Experiments &amp; Tests</a>
+    <ol>
+      <li><a href="#theory-work">Theory Work</a>
         <ul>
-          <li><a href="#1-lab-test-1-simple-cms-blog-application">1. Lab Test-1 Experiment (Simple CMS Blog)</a></li>
-          <li><a href="#2-experiment-1-web-page-with-html5-elements">2. Experiment 1 (HTML5 Web Page)</a></li>
+          <li><a href="#unit-1">Unit 1 – Backend Development Fundamentals</a></li>
+          <li><a href="#unit-2">Unit 2 – Database Management and API Development</a></li>
+          <li><a href="#unit-3">Unit 3 – Advanced Backend Development</a></li>
+          <li><a href="#unit-5">Unit 5 – Advanced Topics</a></li>
+          <li><a href="#theory-assignments">Theory Assignments</a></li>
+          <li><a href="#express-flask">Express Demos &amp; Flask Server</a></li>
         </ul>
       </li>
-      <li><a href="#theory--assignments">Theory Assignments &amp; Demos</a>
+      <li><a href="#lab-work">Lab Work</a>
         <ul>
-          <li><a href="#assignment-1-notes-app">Assignment 1: Notes App</a></li>
-          <li><a href="#assignment-2-postgresql-as-sql--nosql">Assignment 2: PostgreSQL as SQL + NoSQL (JSONB)</a></li>
-          <li><a href="#express-demos--flask-server">Express Demos &amp; Flask Server</a></li>
+          <li><a href="#experiments">Experiment 1 to Experiment 15</a></li>
+          <li><a href="#lab-test-1">Lab Test-1 – Simple CMS Blog Application</a></li>
         </ul>
       </li>
+      <li><a href="#technologies">Technologies and Tools Used</a></li>
       <li><a href="#how-to-run">How to Run</a></li>
+      <li><a href="#overall-reports">Overall Reports</a></li>
+      <li><a href="#important-links">Important Links</a></li>
+    </ol>
+
+    <hr>
+
+    <!-- ==================== THEORY WORK ==================== -->
+    <h2 id="theory-work">1. Theory Work</h2>
+    <p><strong>Directory:</strong> <code>Theory/</code></p>
+    <p>The Theory section contains practical implementations completed as part of Units 1, 2, 3, and 5, along with three assignments and additional backend demonstrations.</p>
+
+    <h3 id="unit-1">Unit 1 – Backend Development Fundamentals</h3>
+    <p><strong>Directory:</strong> <code>Theory/</code></p>
+
+    <h4>Practical Folders</h4>
+    <ul>
+      <li><code>unit-1(P-1)</code></li>
+      <li><code>unit-1(P-2)</code></li>
+      <li><code>unit-1(P-3)</code></li>
+      <li><code>unit-1(P-4)</code></li>
+      <li><code>unit-1(P-5)</code></li>
+      <li><code>unit-1(P-6)</code></li>
+    </ul>
+
+    <h4>Topics Covered</h4>
+    <ul>
+      <li>Introduction to Backend Development.</li>
+      <li>Client-Server Architecture.</li>
+      <li>Node.js and Express.js fundamentals.</li>
+      <li>HTTP protocol, methods, requests, and responses.</li>
+      <li>Flask and FastAPI fundamentals.</li>
+      <li>REST API development.</li>
+      <li>Sessions and Cookies.</li>
+      <li>Browser Storage and JSON.</li>
+      <li>EJS and Jinja2.</li>
+      <li>Server-Side Rendering (SSR).</li>
+    </ul>
+    <p><strong>Report:</strong> Unit 1 section in the overall <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Overall_Report.md">Overall_Report.md</a>.</p>
+
+    <hr>
+
+    <h3 id="unit-2">Unit 2 – Database Management and API Development</h3>
+    <p><strong>Directory:</strong> <code>Theory/</code></p>
+
+    <h4>Practical Folders</h4>
+    <ul>
+      <li><code>unit-2(P-1)</code> through <code>unit-2(P-11)</code></li>
+    </ul>
+
+    <h4>Topics Covered</h4>
+    <ul>
+      <li>Database fundamentals.</li>
+      <li>SQL and relational databases.</li>
+      <li>Database normalization.</li>
+      <li>Schema design and data modelling.</li>
+      <li>CRUD operations.</li>
+      <li>Database connectivity using SQLAlchemy.</li>
+      <li>MongoDB and Mongoose.</li>
+      <li>REST API development.</li>
+      <li>Authentication and authorization.</li>
+      <li>JWT-based authentication.</li>
+      <li>Password hashing using bcrypt.</li>
+      <li>API testing using pytest.</li>
+      <li>Query optimization and indexing.</li>
+    </ul>
+    <p><strong>Testing:</strong> The project test suite included 151 test cases.</p>
+    <p><strong>Report:</strong> Unit 2 section in the overall <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Overall_Report.md">Overall_Report.md</a>.</p>
+
+    <hr>
+
+    <h3 id="unit-3">Unit 3 – Advanced Backend Development</h3>
+    <p><strong>Directory:</strong> <code>Theory/</code></p>
+
+    <h4>Practical Folders</h4>
+    <ul>
+      <li><code>unit-3(P-1)</code> through <code>unit-3(P-8)</code></li>
+    </ul>
+
+    <h4>Topics Covered</h4>
+    <ul>
+      <li>Middleware and routing using Express.js.</li>
+      <li>Django middleware and URL routing.</li>
+      <li>Third-party API integration using Python Requests.</li>
+      <li>Testing and debugging backend applications.</li>
+      <li>Authentication and authorization.</li>
+      <li>Caching and database query optimization.</li>
+      <li>Django forms and form validation.</li>
+      <li>File uploads using Django REST Framework and Pillow.</li>
+      <li>Static and media file management.</li>
+      <li>Secure file access.</li>
+    </ul>
+    <p><strong>Report:</strong> Unit 3 section in the overall <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Overall_Report.md">Overall_Report.md</a>.</p>
+
+    <hr>
+
+    <h3 id="unit-5">Unit 5 – Advanced Backend Development Topics</h3>
+    <p><strong>Directory:</strong> <code>Theory/</code></p>
+
+    <h4>Practical Folders</h4>
+    <ul>
+      <li><code>unit-5(P-1)</code> through <code>unit-5(P-4)</code></li>
+    </ul>
+
+    <h4>Topics Covered</h4>
+
+    <p><strong>Practical 1 – Service Discovery, Messaging and Serverless Functions</strong></p>
+    <ul>
+      <li>Service discovery using Consul.</li>
+      <li>Messaging concepts using RabbitMQ.</li>
+      <li>Durable messaging and idempotency.</li>
+      <li>Serverless functions using Functions Framework.</li>
+    </ul>
+
+    <p><strong>Practical 2 – AWS Serverless Architecture</strong></p>
+    <ul>
+      <li>AWS Lambda.</li>
+      <li>Amazon SQS.</li>
+      <li>Amazon DynamoDB.</li>
+      <li>AWS Serverless Application Model (SAM).</li>
+      <li>IAM permissions and least-privilege access.</li>
+      <li>Dead Letter Queues (DLQ).</li>
+    </ul>
+
+    <p><strong>Practical 3 – Backend Performance Profiling</strong></p>
+    <ul>
+      <li>Performance profiling using Express.js and FastAPI.</li>
+      <li>Response-time measurement.</li>
+      <li>p50, p95, and p99 latency.</li>
+      <li>Throughput and error-rate monitoring.</li>
+      <li>Event-loop delay and memory usage.</li>
+      <li>Load testing using Autocannon.</li>
+    </ul>
+
+    <p><strong>Practical 4 – Architecture Presentation and Evaluation</strong></p>
+    <ul>
+      <li>Advanced backend architecture.</li>
+      <li>Architecture diagrams.</li>
+      <li>Design decisions and trade-offs.</li>
+      <li>Implementation challenges.</li>
+      <li>Technical questions and answers.</li>
+      <li>Peer-review criteria.</li>
+    </ul>
+    <p><strong>Report:</strong> Unit 5 section in the overall <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Overall_Report.md">Overall_Report.md</a>.</p>
+
+    <hr>
+
+    <!-- ==================== THEORY ASSIGNMENTS ==================== -->
+    <h2 id="theory-assignments">Theory Assignments</h2>
+
+    <h3>Assignment 1 – Notes App</h3>
+    <p><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Assignment-1"><code>Theory/Assignment-1/</code></a></p>
+
+    <h4>Files</h4>
+    <ul>
+      <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/index.html">index.html</a> – Application structure.</li>
+      <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/style.css">style.css</a> – Styling and responsive layout.</li>
+      <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/script.js">script.js</a> – Application functionality.</li>
+      <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/Report.md">Report.md</a> – Assignment report.</li>
+    </ul>
+    <p><strong>Live Application:</strong> <a href="./Theory/Assignment-1/index.html"><strong>🌐 Open Notes App Live</strong></a></p>
+    <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, LocalStorage, and JSON.</p>
+
+    <h4>Overview</h4>
+    <p>A client-side Notes Application that allows users to create, view, manage, and delete notes.</p>
+    <h4>Key Features</h4>
+    <ul>
+      <li>Add and display notes.</li>
+      <li>Delete existing notes.</li>
+      <li>Store notes using browser LocalStorage.</li>
+      <li>Use <code>JSON.stringify()</code> and <code>JSON.parse()</code> for data handling.</li>
+      <li>Form validation and user feedback.</li>
     </ul>
 
     <hr>
 
-    <h2 id="repository-structure">📁 Repository Structure</h2>
-    <pre><code>BackendDevelopment/
-├── Lab/
-│   ├── Experiment1/                      # Experiment 1: HTML5 Elements
-│   │   ├── index.html                    # Main HTML5 Webpage
-│   │   └── Report.md                     # Experiment 1 Lab Report
-│   └── Lab Test-1 Experiment/            # Lab Test-1: Simple CMS Blog
-│       ├── app.js                        # Express server &amp; MongoDB logic
-│       ├── package.json                  # Dependencies &amp; scripts
-│       ├── views/                        # EJS template views
-│       ├── public/                       # CSS stylesheets
-│       ├── README.md                     # Lab Test 1 Documentation
-│       └── Report.md                     # Lab Test 1 Full Report
-├── Theory/
-│   ├── Assignment-1/                     # Assignment 1: Notes App
-│   │   ├── index.html                    # Notes App Webpage
-│   │   ├── style.css                     # Notes App Stylesheet
-│   │   ├── script.js                     # Notes App JavaScript Logic
-│   │   └── Report.md                     # Assignment 1 Full Report
-│   ├── Assignment-2/                     # Assignment 2: PostgreSQL JSONB (SQL + NoSQL)
-│   │   └── Report.md                     # Assignment 2 Full Report
-│   ├── Express/                          # Express.js theory code &amp; demos
-│   │   ├── Server.js                     # Express server entry point
-│   │   └── express-demo/                 # Demo configuration
-│   └── Flask Server/                     # Flask server implementation
-│       ├── main.py                       # Flask server entry point
-│       └── README.md                     # Flask server documentation
-└── README.md                             # Main Repository Index</code></pre>
+    <h3>Assignment 2 – PostgreSQL as SQL + NoSQL (JSONB)</h3>
+    <p><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Assignment-2"><code>Theory/Assignment-2/</code></a></p>
+    <p><strong>Files:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-2/Report.md">Report.md</a> – Complete theoretical and practical assignment report.</p>
+    <p><strong>Technologies:</strong> PostgreSQL 18, JSONB, GIN Indexing, MongoDB, and SQL.</p>
+    <p><strong>Database:</strong> <code>product_catalog</code> &nbsp;|&nbsp; <strong>Table:</strong> <code>products</code></p>
+
+    <h4>Topics Covered</h4>
+    <ul>
+      <li>Difference between JSON and JSONB.</li>
+      <li>SQL and NoSQL concepts.</li>
+      <li>JSONB operators: <code>-&gt;</code>, <code>-&gt;&gt;</code>, <code>@&gt;</code>, <code>?</code></li>
+      <li>GIN indexing.</li>
+      <li>JSONB queries and updates.</li>
+      <li>PostgreSQL and MongoDB comparison.</li>
+      <li>Query performance using <code>EXPLAIN ANALYZE</code>.</li>
+      <li>Product catalogue database implementation.</li>
+    </ul>
 
     <hr>
 
-    <h2 id="lab-experiments--tests">🧪 Lab Experiments &amp; Tests</h2>
+    <h3>Assignment 3 – Serverless Architecture (FaaS)</h3>
+
+    <h4>Overview</h4>
+    <p>This assignment focuses on Serverless Architecture and Function as a Service (FaaS).</p>
+    <h4>Topics Covered</h4>
+    <ul>
+      <li>Introduction to Serverless Architecture.</li>
+      <li>Function as a Service.</li>
+      <li>Event-driven architecture.</li>
+      <li>AWS Lambda.</li>
+      <li>Serverless application execution.</li>
+      <li>Advantages and disadvantages of serverless computing.</li>
+      <li>Practical applications of serverless architecture.</li>
+    </ul>
+
+    <hr>
+
+    <!-- ==================== EXPRESS & FLASK ==================== -->
+    <h2 id="express-flask">Additional Backend Demonstrations</h2>
+
+    <h3>Express Demos</h3>
+    <p><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Express"><code>Theory/Express/</code></a> &nbsp;|&nbsp; <strong>Demo Folder:</strong> <code>express-demo/</code></p>
+    <p><strong>Main File:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Express/Server.js"><code>Theory/Express/Server.js</code></a></p>
+    <p><strong>Technologies:</strong> Node.js and Express.js.</p>
+    <ul>
+      <li>Creating an Express server.</li>
+      <li>Handling HTTP requests.</li>
+      <li>Defining routes.</li>
+      <li>Sending HTTP responses.</li>
+      <li>Middleware and application structure.</li>
+    </ul>
+
+    <h3>Flask Server</h3>
+    <p><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Flask%20Server"><code>Theory/Flask Server/</code></a></p>
+    <p><strong>Files:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Flask%20Server/main.py">main.py</a>, README.md</p>
+    <p><strong>Technologies:</strong> Python 3 and Flask.</p>
+    <ul>
+      <li>Creating a Flask application.</li>
+      <li>Running a local development server.</li>
+      <li>Defining URL routes.</li>
+      <li>Handling HTTP requests.</li>
+      <li>Returning responses.</li>
+    </ul>
+
+    <hr>
+
+    <!-- ==================== LAB WORK ==================== -->
+    <h2 id="lab-work">2. Lab Work</h2>
+    <p><strong>Directory:</strong> <code>Lab/</code></p>
+    <p>The Lab section contains 15 practical experiments covering HTML5, CSS3, Bootstrap, JavaScript, AJAX, jQuery, Node.js, MongoDB, PostgreSQL, Mongoose, and Django. Each experiment contains its respective source code, implementation files, and practical documentation.</p>
+
+    <h2 id="experiments">Lab Experiments</h2>
+
     <table>
       <thead>
         <tr>
           <th>#</th>
-          <th>Experiment / Test Name</th>
-          <th>Link</th>
-          <th>Lab Report</th>
+          <th>Experiment Title</th>
           <th>Key Technologies</th>
+          <th>Folder</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>1</td>
-          <td><strong>Lab Test-1 Experiment</strong> (Simple CMS Blog)</td>
-          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Lab/Lab%20Test-1%20Experiment">📁 <code>Lab/Lab Test-1 Experiment</code></a></td>
-          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Lab%20Test-1%20Experiment/Report.md">📄 Report.md</a></td>
-          <td>Node.js, Express, MongoDB, EJS</td>
+          <td><strong>HTML5 Elements</strong> – Create a Web Page with All Possible Elements of HTML5</td>
+          <td>HTML5</td>
+          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Lab/Experiment1">📁 Experiment1</a></td>
         </tr>
         <tr>
           <td>2</td>
-          <td><strong>Experiment 1</strong> (HTML5 Web Page)</td>
-          <td><a href="./Lab/Experiment1/index.html">🌐 <strong>View Webpage Live</strong></a></td>
-          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Experiment1/Report.md">📄 Report.md</a></td>
-          <td>HTML5, CSS3, JavaScript</td>
+          <td><strong>Cascading Style Sheets</strong> – Create a Web Page with All Types of CSS</td>
+          <td>CSS3</td>
+          <td>Lab/Experiment2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>Responsive Web Page</strong> – HTML and CSS Responsive Design</td>
+          <td>HTML5, CSS3, Media Queries</td>
+          <td>Lab/Experiment3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Bootstrap</strong> – Responsive Web Page with Bootstrap</td>
+          <td>Bootstrap</td>
+          <td>Lab/Experiment4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>JavaScript Fundamentals</strong> – Arrays, Objects, and Functions</td>
+          <td>JavaScript</td>
+          <td>Lab/Experiment5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>JavaScript Form Validation</strong> – Client-Side Form Validation</td>
+          <td>JavaScript</td>
+          <td>Lab/Experiment6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><strong>ES6 Concepts</strong> – let, const, Arrow Functions, Destructuring</td>
+          <td>JavaScript ES6</td>
+          <td>Lab/Experiment7</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><strong>DOM and Event Handling</strong> – DOM Manipulation and Events</td>
+          <td>JavaScript, DOM</td>
+          <td>Lab/Experiment8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><strong>AJAX</strong> – Programs Using AJAX with HTML, XML and JSON</td>
+          <td>JavaScript, AJAX</td>
+          <td>Lab/Experiment9</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><strong>jQuery</strong> – Programs to Familiarize jQuery</td>
+          <td>jQuery</td>
+          <td>Lab/Experiment10</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td><strong>AJAX Website</strong> – Full Website with HTML, CSS, JS and AJAX</td>
+          <td>HTML5, CSS3, JavaScript, AJAX</td>
+          <td>Lab/Experiment11</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td><strong>Node.js</strong> – Server-Side Scripting using Node.js (2 Parts)</td>
+          <td>Node.js</td>
+          <td>Lab/Experiment12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td><strong>MongoDB and Node.js</strong> – Database Operations (3 Parts)</td>
+          <td>Node.js, MongoDB, Mongoose</td>
+          <td>Lab/Experiment13</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td><strong>Relational and Document Database</strong> – PostgreSQL and MongoDB</td>
+          <td>PostgreSQL, MongoDB, JSONB</td>
+          <td>Lab/Experiment14</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td><strong>Django To-Do Application</strong> – Full CRUD with MVT Architecture</td>
+          <td>Python 3.13, Django 6.1.2, SQLite</td>
+          <td>Lab/Experiment15</td>
         </tr>
       </tbody>
     </table>
 
     <hr>
 
-    <h3 id="1-lab-test-1-simple-cms-blog-application">1. Lab Test-1: Simple CMS Blog Application</h3>
+    <h3>Experiment 1 – HTML5 Elements</h3>
+    <ul>
+      <li><strong>Live Webpage:</strong> <a href="./Lab/Experiment1/index.html"><strong>🌐 Open index.html Live</strong></a></li>
+      <li><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Lab/Experiment1">📁 <code>Lab/Experiment1/</code></a></li>
+      <li><strong>Lab Report:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Experiment1/Report.md">Report.md</a></li>
+      <li><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript</li>
+    </ul>
+    <p>Topics: HTML5 document structure, semantic elements, text formatting, lists, tables, forms, links, images, and media.</p>
+
+    <h3>Experiment 2 – Cascading Style Sheets</h3>
+    <p>Topics: Inline CSS, internal CSS, external CSS, selectors, colours, fonts, margins, padding, and borders.</p>
+
+    <h3>Experiment 3 – Responsive Web Page</h3>
+    <p>Topics: Responsive web design, CSS layouts, media queries, flexible layouts, and mobile-friendly design.</p>
+
+    <h3>Experiment 4 – Bootstrap</h3>
+    <p>Topics: Bootstrap framework, grid system, containers and rows, responsive columns, and Bootstrap components.</p>
+
+    <h3>Experiment 5 – JavaScript Fundamentals</h3>
+    <p>Topics: JavaScript arrays, objects, functions, array operations, object properties, and function calls.</p>
+
+    <h3>Experiment 6 – JavaScript Form Validation</h3>
+    <p>Topics: HTML forms, input handling, required-field validation, error messages, and form submission handling.</p>
+
+    <h3>Experiment 7 – ES6 Concepts</h3>
+    <p>Topics: <code>let</code> and <code>const</code>, arrow functions, template literals, destructuring, spread and rest operators, default parameters.</p>
+
+    <h3>Experiment 8 – DOM and Event Handling</h3>
+    <p>Topics: Document Object Model, DOM selection, element manipulation, event listeners, click and input events, dynamic web-page updates.</p>
+
+    <h3>Experiment 9 – AJAX</h3>
+    <p>Topics: AJAX fundamentals, asynchronous requests, loading HTML/XML/JSON data, updating webpage content without reloading.</p>
+
+    <h3>Experiment 10 – jQuery</h3>
+    <p>Topics: jQuery fundamentals, selectors, DOM manipulation, event handling, effects and animations.</p>
+
+    <h3>Experiment 11 – AJAX Website</h3>
+    <p>Topics: Website development using HTML and CSS, JavaScript functionality, AJAX implementation, and dynamic webpage updates.</p>
+
+    <h3>Experiment 12 – Node.js (2 Parts)</h3>
+    <p>Topics: Node.js fundamentals, server-side JavaScript, creating backend applications, request and response handling.</p>
+
+    <h3>Experiment 13 – MongoDB and Node.js (3 Parts)</h3>
+    <p>Topics: MongoDB fundamentals, database and collection operations, connecting MongoDB with Node.js, Mongoose basics. <br><strong>Part C:</strong> MongoDB Installation and Mongoose Basics.</p>
+
+    <h3>Experiment 14 – Relational and Document Database</h3>
+    <p>Topics: PostgreSQL table creation, SQL queries, update/delete, aggregation, MongoDB operations, JSONB operations.</p>
+    <p><strong>PostgreSQL DB:</strong> <code>student_management</code> | <strong>Table:</strong> <code>students</code> | <strong>MongoDB Collection:</strong> <code>students</code></p>
+
+    <h3>Experiment 15 – Django To-Do Application</h3>
+    <p>Topics: Django project setup, MVT architecture, models, database migrations, URL routing, views and templates, CRUD operations, static files.</p>
+    <p><strong>Technologies:</strong> Python 3.13, Django 6.1.2, and SQLite.</p>
+
+    <hr>
+
+    <!-- ==================== LAB TEST-1 ==================== -->
+    <h2 id="lab-test-1">Lab Test-1 – Simple CMS Blog Application</h2>
+
     <ul>
       <li><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Lab/Lab%20Test-1%20Experiment">📁 <code>Lab/Lab Test-1 Experiment/</code></a></li>
       <li><strong>Documentation:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Lab%20Test-1%20Experiment/README.md">README.md</a></li>
       <li><strong>Lab Report:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Lab%20Test-1%20Experiment/Report.md">Report.md</a></li>
       <li><strong>Application Code:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Lab%20Test-1%20Experiment/app.js">app.js</a></li>
-      <li><strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, EJS, HTML5, CSS3</li>
     </ul>
 
-    <h4>Overview</h4>
-    <p>A full-stack Blog Content Management System (CMS) built during the Lab Test-1 Examination. It allows users to create new blog posts, browse all existing posts, and view individual articles in detail. Data is persisted in a MongoDB database with server-rendered EJS templates.</p>
+    <p><strong>Technologies:</strong> Node.js, Express.js, EJS, MongoDB, MongoDB Node.js Driver, HTML and CSS.</p>
+    <p><strong>Database:</strong> <code>cms_lab</code> | <strong>Collection:</strong> <code>posts</code> | <strong>MongoDB URI:</strong> <code>mongodb://127.0.0.1:27017</code> | <strong>Port:</strong> <code>3000</code></p>
 
-    <h4>Key Features</h4>
+    <h4>Main Features</h4>
     <ul>
-      <li><strong>Create Post:</strong> Form allowing submission of title, author, and content with automatic timestamps.</li>
-      <li><strong>View All Posts:</strong> Displays cards for each blog post sorted chronologically.</li>
-      <li><strong>View Single Post:</strong> Dynamic routing (<code>/post/:id</code>) to display full blog post contents.</li>
-      <li><strong>MongoDB Integration:</strong> Connected to <code>mongodb://127.0.0.1:27017</code> with database <code>cms_lab</code> and collection <code>posts</code>.</li>
+      <li>Display all blog posts.</li>
+      <li>Create a new blog post.</li>
+      <li>View an individual blog post.</li>
+      <li>Store posts in MongoDB.</li>
+      <li>Handle form submissions.</li>
+      <li>Display dynamic content using EJS.</li>
     </ul>
 
-    <hr>
-
-    <h3 id="2-experiment-1-web-page-with-html5-elements">2. Experiment 1: Web Page with HTML5 Elements</h3>
-    <ul>
-      <li><strong>Live Webpage:</strong> <a href="./Lab/Experiment1/index.html"><strong>Open index.html</strong></a></li>
-      <li><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Lab/Experiment1">📁 <code>Lab/Experiment1/</code></a></li>
-      <li><strong>Lab Report:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Lab/Experiment1/Report.md">Report.md</a></li>
-      <li><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript</li>
-    </ul>
-
-    <h4>Overview</h4>
-    <p>An exploration and demonstration of core modern HTML5 elements, structures, and semantic web standards.</p>
-
-    <h4>Key Features</h4>
-    <ul>
-      <li><strong>Semantic Structure:</strong> Utilization of <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
-      <li><strong>Text &amp; Media Elements:</strong> Headings, blockquotes, code blocks, lists, audio playback, and embedded video.</li>
-      <li><strong>Tables &amp; Forms:</strong> Data tables, interactive form controls with validation, range sliders, date pickers, and submit actions.</li>
-    </ul>
-
-    <hr>
-
-    <h2 id="theory--assignments">📚 Theory Assignments &amp; Demos</h2>
+    <h4>Routes</h4>
     <table>
       <thead>
-        <tr>
-          <th>#</th>
-          <th>Assignment / Topic</th>
-          <th>Live / Link</th>
-          <th>Files &amp; Documentation</th>
-          <th>Tech Stack</th>
-        </tr>
+        <tr><th>Method</th><th>Route</th><th>Function</th></tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td><strong>Assignment 1: Notes App</strong></td>
-          <td><a href="./Theory/Assignment-1/index.html">🌐 <strong>Open Notes App Live</strong></a></td>
-          <td>
-            <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/Report.md">📄 Report.md</a><br>
-            <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/index.html">📄 index.html</a><br>
-            <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/style.css">📄 style.css</a><br>
-            <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/script.js">📄 script.js</a>
-          </td>
-          <td>HTML5, CSS3, JavaScript, LocalStorage, JSON</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><strong>Assignment 2: PostgreSQL as SQL + NoSQL (JSONB)</strong></td>
-          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Assignment-2">📁 <code>Theory/Assignment-2</code></a></td>
-          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-2/Report.md">📄 Report.md</a></td>
-          <td>PostgreSQL 18, JSONB, GIN Indexing, MongoDB</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td><strong>Express Demos</strong></td>
-          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Express">📁 <code>Theory/Express</code></a></td>
-          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Express/Server.js">📄 Server.js</a></td>
-          <td>Node.js, Express.js</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td><strong>Flask Server</strong></td>
-          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Flask%20Server">📁 <code>Theory/Flask Server</code></a></td>
-          <td><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Flask%20Server/main.py">📄 main.py</a></td>
-          <td>Python 3, Flask</td>
-        </tr>
+        <tr><td>GET</td><td><code>/</code></td><td>Display all posts</td></tr>
+        <tr><td>GET</td><td><code>/posts/new</code></td><td>Display new post form</td></tr>
+        <tr><td>POST</td><td><code>/posts</code></td><td>Create a post</td></tr>
+        <tr><td>GET</td><td><code>/posts/:id</code></td><td>Display an individual post</td></tr>
+      </tbody>
+    </table>
+
+    <h4>Project Structure</h4>
+    <pre><code>Lab Test-1/
+│
+├── app.js
+├── package.json
+├── package-lock.json
+├── views/
+│   ├── posts.ejs
+│   ├── new-post.ejs
+│   └── post.ejs
+├── public/
+│   └── style.css
+├── README.md
+└── Report.md</code></pre>
+
+    <hr>
+
+    <!-- ==================== TECHNOLOGIES ==================== -->
+    <h2 id="technologies">3. Technologies and Tools Used</h2>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Technologies and Tools</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Programming Languages</td><td>Python, JavaScript, SQL</td></tr>
+        <tr><td>Frontend</td><td>HTML5, CSS3, Bootstrap, jQuery</td></tr>
+        <tr><td>Backend Frameworks</td><td>Node.js, Express.js, Flask, Django, FastAPI</td></tr>
+        <tr><td>Databases</td><td>PostgreSQL, SQLite, MongoDB</td></tr>
+        <tr><td>ORM and ODM</td><td>SQLAlchemy, Mongoose</td></tr>
+        <tr><td>Authentication</td><td>JWT, bcrypt</td></tr>
+        <tr><td>API Communication</td><td>HTTP, REST API, AJAX, Requests, JSON</td></tr>
+        <tr><td>Testing</td><td>pytest</td></tr>
+        <tr><td>Image Processing</td><td>Pillow</td></tr>
+        <tr><td>Cloud Computing</td><td>AWS Lambda, AWS SAM</td></tr>
+        <tr><td>Messaging</td><td>RabbitMQ, Amazon SQS</td></tr>
+        <tr><td>Service Discovery</td><td>Consul</td></tr>
+        <tr><td>Performance Testing</td><td>Autocannon</td></tr>
+        <tr><td>Server-Side Templates</td><td>EJS, Jinja2</td></tr>
+        <tr><td>Development Tools</td><td>VS Code, pgAdmin, mongosh</td></tr>
+        <tr><td>Version Control</td><td>Git and GitHub</td></tr>
+        <tr><td>Containerization</td><td>Docker</td></tr>
       </tbody>
     </table>
 
     <hr>
 
-    <h3 id="assignment-1-notes-app">Assignment 1: Notes App</h3>
-    <ul>
-      <li><strong>Live Application:</strong> <a href="./Theory/Assignment-1/index.html"><strong>Open Notes App Live</strong></a></li>
-      <li><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Assignment-1">📁 <code>Theory/Assignment-1/</code></a></li>
-      <li><strong>Documentation:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/Report.md">Report.md</a></li>
-      <li><strong>Source Files:</strong>
-        <ul>
-          <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/index.html">index.html</a> — Notes application UI structure and input form</li>
-          <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/style.css">style.css</a> — Styling, responsive note card grid, and UI states</li>
-          <li><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-1/script.js">script.js</a> — Note operations, LocalStorage synchronization, and validation</li>
-        </ul>
-      </li>
-      <li><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, Browser LocalStorage, JSON</li>
-    </ul>
+    <!-- ==================== HOW TO RUN ==================== -->
+    <h2 id="how-to-run">4. 🚀 How to Run</h2>
 
-    <h4>Overview</h4>
-    <p>A client-side Notes Application that empowers users to compose, organize, and delete personal notes. Utilizes the browser's <code>localStorage</code> API in combination with JSON serialization so that user data persists across page refreshes and browser restarts.</p>
-
-    <h4>Key Features</h4>
-    <ul>
-      <li><strong>Add &amp; Display Notes:</strong> Interactive input form with dynamic rendering into organized note cards.</li>
-      <li><strong>Persistent Local Storage:</strong> Full synchronization with browser storage using <code>JSON.stringify</code> and <code>JSON.parse</code>.</li>
-      <li><strong>Delete Functionality:</strong> Instant deletion of individual notes with automatic state persistence.</li>
-      <li><strong>Validation &amp; Feedback:</strong> Input verification preventing empty submissions with transient feedback alerts.</li>
-    </ul>
-
-    <hr>
-
-    <h3 id="assignment-2-postgresql-as-sql--nosql">Assignment 2: PostgreSQL as SQL + NoSQL — Working with JSONB</h3>
-    <ul>
-      <li><strong>Directory:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Assignment-2">📁 <code>Theory/Assignment-2/</code></a></li>
-      <li><strong>Documentation &amp; Full Report:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-2/Report.md">Report.md</a></li>
-      <li><strong>Tech Stack:</strong> PostgreSQL 18, JSONB, GIN Indexing, MongoDB, SQL</li>
-    </ul>
-
-    <h4>Overview</h4>
-    <p>A comprehensive theoretical study and practical laboratory implementation demonstrating how PostgreSQL bridges relational SQL and document-oriented NoSQL storage using the <code>JSONB</code> binary format. Explores hybrid schema design, query operators, GIN index acceleration, <code>EXPLAIN ANALYZE</code> query profiling, and a comparative evaluation against MongoDB.</p>
-
-    <h4>Key Topics &amp; Implementations Covered</h4>
-    <ul>
-      <li><strong>Conceptual Analysis (Part A):</strong>
-        <ul>
-          <li>Differences between <code>JSON</code> (raw text storage) and <code>JSONB</code> (decomposed binary format).</li>
-          <li>Combining strongly typed SQL columns (id, name, price) with dynamic JSONB document attributes in the same table.</li>
-          <li>JSONB operators in depth: <code>-&gt;</code> (extract JSON value), <code>-&gt;&gt;</code> (extract as text), <code>@&gt;</code> (containment check), and <code>?</code> (top-level key existence).</li>
-          <li>GIN (Generalized Inverted Index) indexing and query planner execution behavior.</li>
-          <li>Architectural trade-offs between PostgreSQL JSONB and MongoDB (ACID transactions, joins, schema enforcement, horizontal sharding).</li>
-        </ul>
-      </li>
-      <li><strong>Practical Implementation (Part B):</strong>
-        <ul>
-          <li>Setup of PostgreSQL <code>product_catalog</code> database and <code>products</code> table.</li>
-          <li>Insertion of diverse products spanning multiple categories with rich JSONB attributes.</li>
-          <li>Attribute updates using JSONB concatenation (<code>||</code>).</li>
-          <li>Query benchmarking before and after GIN index creation using <code>EXPLAIN ANALYZE</code>.</li>
-          <li>Equivalent MongoDB setup and cross-platform comparative analysis.</li>
-        </ul>
-      </li>
-    </ul>
-
-    <hr>
-
-    <h3 id="express-demos--flask-server">Express Demos &amp; Flask Server</h3>
-    <ul>
-      <li><strong><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Express">Express Demos:</a></strong> Basic server setup and routing using Express.js. (Entry: <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Express/Server.js">Server.js</a>)</li>
-      <li><strong><a href="https://github.com/saanvi-15singh/BackendDevelopment/tree/main/Theory/Flask%20Server">Flask Server:</a></strong> Backend server implementation using Python and Flask. (Entry: <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Flask%20Server/main.py">main.py</a>)</li>
-    </ul>
-
-    <hr>
-
-    <h2 id="how-to-run">🚀 How to Run</h2>
-
-    <h3>Running Assignment 1 (Notes App)</h3>
+    <h3>Running the Notes App (Assignment 1)</h3>
     <p>Open <a href="./Theory/Assignment-1/index.html"><code>Theory/Assignment-1/index.html</code></a> directly in any modern web browser, or launch using VS Code Live Server.</p>
 
-    <h3>Running Assignment 2 (PostgreSQL &amp; MongoDB)</h3>
-    <p>Follow the complete step-by-step SQL queries and MongoDB shell commands provided in <a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Theory/Assignment-2/Report.md"><code>Theory/Assignment-2/Report.md</code></a>.</p>
+    <h3>Running the Express Demo</h3>
+    <pre><code>cd Theory/Express
+node Server.js</code></pre>
 
-    <h3>Running Lab Test-1 (Simple CMS Blog)</h3>
+    <h3>Running the Flask Server</h3>
+    <pre><code>cd "Theory/Flask Server"
+python main.py</code></pre>
+
+    <h3>Running the CMS Blog Application (Lab Test-1)</h3>
     <pre><code># 1. Navigate to the project directory
 cd "Lab/Lab Test-1 Experiment"
 
@@ -496,28 +677,47 @@ mongod
 
 # 4. Start the application
 node app.js</code></pre>
-    <p>Open your browser and navigate to <code>http://localhost:3000</code>.</p>
+    <p>Open your browser and navigate to <code>http://localhost:3000</code>. Make sure MongoDB is running before starting the application.</p>
 
-    <h3>Running Experiment 1</h3>
+    <h3>Running Experiment 1 (HTML5)</h3>
     <p>Open <a href="./Lab/Experiment1/index.html"><code>Lab/Experiment1/index.html</code></a> directly in any web browser, or use VS Code Live Server.</p>
 
-    <h3>Running Express Demos</h3>
-    <pre><code>cd "Theory/Express"
-node Server.js</code></pre>
-
-    <h3>Running Flask Server</h3>
-    <pre><code>cd "Theory/Flask Server"
-python main.py</code></pre>
+    <h3>Running Other Practical Experiments</h3>
+    <p>Refer to the individual experiment folders for their source files, dependencies, setup instructions, and execution commands.</p>
 
     <hr>
 
+    <!-- ==================== OVERALL REPORTS ==================== -->
+    <h2 id="overall-reports">5. Overall Reports</h2>
+    <p>The repository contains consolidated documentation for both Theory and Lab coursework.</p>
+
+    <h3>Overall README</h3>
+    <p><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/README.md">README.md</a> – Contains the repository overview, theory units, assignments, practical experiments, technologies, and execution instructions.</p>
+
+    <h3>Overall Report</h3>
+    <p><a href="https://github.com/saanvi-15singh/BackendDevelopment/blob/main/Overall_Report.md">Overall_Report.md</a> – Contains the detailed documentation of:</p>
+    <ul>
+      <li>Theory Units 1, 2, 3, and 5.</li>
+      <li>Theory Assignments 1, 2, and 3.</li>
+      <li>Express and Flask demonstrations.</li>
+      <li>Lab Experiments 1 to 15.</li>
+      <li>Lab Test-1 – Simple CMS Blog Application.</li>
+      <li>Objectives and learning outcomes.</li>
+      <li>Technologies and tools.</li>
+      <li>Challenges faced.</li>
+      <li>Conclusion and references.</li>
+    </ul>
+
+    <hr>
+
+    <!-- ==================== IMPORTANT LINKS ==================== -->
     <h2 id="important-links">🔗 Important Links</h2>
     <ol>
       <li><strong>Backend Development GitHub Repository:</strong> <a href="https://github.com/saanvi-15singh/BackendDevelopment">View Repository</a></li>
       <li><strong>Backend Development I/O File:</strong> <a href="https://saanvi-15singh.github.io/BackendDevelopment">View I/O File</a></li>
       <li><strong>Docker Experiment Repository:</strong> <a href="https://github.com/saanvi-15singh/Backend_Docker-Experiment">View Docker Experiment Repository</a></li>
       <li><strong>Docker Experiment I/O File:</strong> <a href="https://saanvi-15singh.github.io/Backend_Docker-Experiment/">View Docker Experiment I/O File</a></li>
-      <li><strong>Docker Experiment Report:</strong> <a href="Report.md">View Project Report</a></li>
+      <li><strong>Docker Experiment Report:</strong> <a href="https://github.com/saanvi-15singh/Backend_Docker-Experiment/blob/main/Report.md">View Project Report</a></li>
     </ol>
 
     <hr>
