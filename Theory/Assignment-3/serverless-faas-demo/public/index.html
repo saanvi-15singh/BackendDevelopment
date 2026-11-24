@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Serverless FaaS Demo
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <div class="badge">
+        SERVERLESS ARCHITECTURE • FaaS
+    </div>
+
+
+    <h1>
+        Student Result Processor
+    </h1>
+
+
+    <p class="subtitle">
+        Event-Driven Function as a Service Demonstration
+    </p>
+
+
+    <!-- Architecture Flow -->
+
+    <div class="architecture">
+
+        <div class="flow-box">
+
+            <div class="icon">
+                👤
+            </div>
+
+            <strong>User</strong>
+
+            <small>
+                Enters Data
+            </small>
+
+        </div>
+
+
+        <div class="arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <div class="icon">
+                ⚡
+            </div>
+
+            <strong>
+                HTTP Event
+            </strong>
+
+            <small>
+                Triggers Function
+            </small>
+
+        </div>
+
+
+        <div class="arrow">
+            →
+        </div>
+
+
+        <div class="flow-box function-box">
+
+            <div class="lambda">
+                λ
+            </div>
+
+            <strong>
+                Function
+            </strong>
+
+            <small>
+                Processes Data
+            </small>
+
+        </div>
+
+
+        <div class="arrow">
+            →
+        </div>
+
+
+        <div class="flow-box">
+
+            <div class="icon">
+                ✓
+            </div>
+
+            <strong>
+                Response
+            </strong>
+
+            <small>
+                Returns Result
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Application -->
+
+    <div class="app-grid">
+
+
+        <!-- Input Card -->
+
+        <div class="card">
+
+            <div class="card-title">
+
+                <span class="number">
+                    01
+                </span>
+
+                <div>
+
+                    <h2>
+                        Create Event
+                    </h2>
+
+                    <p>
+                        Enter student information
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <label for="name">
+                Student Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Example: Saanvi Singh"
+            >
+
+
+            <label for="subject">
+                Subject
+            </label>
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Example: Backend Development"
+            >
+
+
+            <label for="marks">
+                Marks
+            </label>
+
+            <input
+                type="number"
+                id="marks"
+                min="0"
+                max="100"
+                placeholder="Enter marks out of 100"
+            >
+
+
+            <button onclick="processResult()">
+
+                ⚡ Trigger Serverless Function
+
+            </button>
+
+        </div>
+
+
+        <!-- Output Card -->
+
+        <div class="card">
+
+            <div class="card-title">
+
+                <span class="number">
+                    02
+                </span>
+
+                <div>
+
+                    <h2>
+                        Function Status
+                    </h2>
+
+                    <p>
+                        Event execution lifecycle
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="waiting"
+                class="waiting"
+            >
+
+                <div class="waiting-lambda">
+                    λ
+                </div>
+
+                <h3>
+                    Waiting for Event
+                </h3>
+
+                <p>
+                    Enter student details and trigger
+                    the function.
+                </p>
+
+            </div>
+
+
+            <div
+                id="loading"
+                class="loading hidden"
+            >
+
+                <div class="spinner">
+                </div>
+
+                <h3>
+                    Function Executing...
+                </h3>
+
+                <p>
+                    HTTP Event Received
+                </p>
+
+            </div>
+
+
+            <div
+                id="result"
+                class="result hidden"
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Technical Information -->
+
+    <div class="technical-flow">
+
+        <div>
+
+            <span>
+                EVENT
+            </span>
+
+            HTTP POST Request
+
+        </div>
+
+
+        <div>
+
+            <span>
+                FUNCTION
+            </span>
+
+            processResult()
+
+        </div>
+
+
+        <div>
+
+            <span>
+                OUTPUT
+            </span>
+
+            JSON Response
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <strong>
+            Backend Development — Assignment III
+        </strong>
+
+        <br>
+
+        Serverless Architecture (FaaS)
+
+        <br><br>
+
+        Saanvi Singh — 590011951
+
+        <br>
+
+        Sakshi Jaiswal — 590015706
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
