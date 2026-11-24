@@ -357,7 +357,3 @@ python main.py
 </p>
 
 ---
-
-<p align="center">
-  Designed by <b>Saanvi Singh</b> | SAP ID: 590011951
-</p>
