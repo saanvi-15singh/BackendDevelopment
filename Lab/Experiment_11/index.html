@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 11 - Website with AJAX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Student Directory</h1>
+        <p>HTML structures the page, CSS styles it, JavaScript loads data with AJAX without reloading.</p>
+
+        <button id="loadFetch">Load with Fetch API</button>
+        <button id="loadXhr">Load with XMLHttpRequest</button>
+        <button id="clearBtn">Clear</button>
+
+        <p id="status" role="status">Click a button to load student data.</p>
+
+        <table>
+            <thead>
+                <tr><th>ID</th><th>Name</th><th>Course</th></tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

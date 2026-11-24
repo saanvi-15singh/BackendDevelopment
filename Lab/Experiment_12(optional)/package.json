@@ -1,0 +1,19 @@
+{
+  "name": "session-cookie-demo",
+  "version": "1.0.0",
+  "description": "Experiment 12 B: sessions and cookies with Node.js and Express",
+  "main": "Source/server.js",
+  "scripts": {
+    "start": "node Source/server.js",
+    "session": "node Source/session-example.js",
+    "cookie": "node Source/cookie-example.js",
+    "ex1": "node Exercises/exercise1-login-system/app.js",
+    "ex2": "node Exercises/exercise2-todo-session/app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}

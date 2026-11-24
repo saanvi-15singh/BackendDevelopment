@@ -18,7 +18,7 @@ To create a web page using different HTML5 elements and understand how they are 
 - HTML5
 - CSS
 - JavaScript
-- Google Chrome / Microsoft Edge
+- Google Chrome / Microsoft Edgea
 
 ## Introduction
 

@@ -1,0 +1,13 @@
+{
+  "name": "mongodb-mongoose-lab",
+  "version": "1.0.0",
+  "description": "Experiment 13 C: MongoDB installation and Mongoose CRUD, queries, sorting, projection",
+  "scripts": {
+    "connect": "node connect.js",
+    "crud": "node crud.js",
+    "queries": "node queries.js"
+  },
+  "dependencies": {
+    "mongoose": "^8.4.0"
+  }
+}
