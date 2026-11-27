@@ -259,6 +259,12 @@ A client-side Notes Application that allows users to create, view, manage, and d
 
 ### Assignment 3 – Serverless Architecture (FaaS)
 
+**Directory:** `Theory/Assignment-3/`
+
+**Files**
+
+- `Report.md` – Assignment report.
+
 **Overview**
 
 This assignment focuses on Serverless Architecture and Function as a Service (FaaS).
